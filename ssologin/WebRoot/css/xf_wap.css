@@ -1,0 +1,128 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+em,var,i{
+	font-style: normal;
+}
+strong,h1,h2,h3,h4,h5,h6,var{
+	font-weight: normal;
+}
+a{
+	text-decoration: none;
+}
+input,textarea,select{
+	resize: none;
+	outline: 0;
+	-webkit-user-select: text;
+}
+li{
+	list-style: none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{font-family: Microsoft YaHei,SimSun,Arial;}
+img{
+	width: 100%;
+}
+*{
+	box-sizing: border-box;
+	-webkit-user-select:none;
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.loading{
+    width: 100%;
+    height: 100%;
+    background: url(../images/loading.gif) center 20px no-repeat #fff;
+    position: fixed;
+    left: 0;
+    z-index: 99999;
+    top:0;
+}
+.xf_warpbg{
+	width: 100%;
+	height: 100%;
+	background: url(../images/xf_warpbg.png) #38b1eb no-repeat;
+	background-size: 100% 100%;
+}
+.xf_logo{
+	padding-top: 5.5rem;
+	padding-bottom: 1.5rem;
+}
+.xf_dlyz{
+	position: relative;
+	padding: 0 5rem 0 3rem;
+}
+.xf_dlyz em{
+	min-height: 1.6rem;
+	display: block;
+	line-height: 1.6rem;
+	color:#ff8171;
+	font-size: 0.8rem;
+	-webkit-transform:scale(0.9);
+}
+.xf_dlyz p input[type=text],.xf_dlyz p input[type=password]{
+	font-size: 1rem;
+	margin-bottom: 0.7rem;
+	width: 100%;
+	height: 2.6rem;
+	padding: 0.5rem 2.4rem;
+	border-radius: 0.3rem;
+	border:0;
+}
+.xf_dlyz p:nth-child(2) input{
+	background: url(../images/icon_yh.png) 5% 50% no-repeat #fff;
+	background-size: 1.2rem;
+}
+.xf_dlyz p:nth-child(3) input{
+	background: url(../images/icon_mm.png) 5% 50% no-repeat #fff;
+	background-size: 1.2rem;
+}
+.xf_denglu{
+	font-family: 'SimSun';
+	font-weight: normal;
+	right:2.5rem;
+	top: 2rem;
+	position: absolute;
+	font-size: 1.4rem;
+	width: 4.8rem;
+	height: 4.8rem;
+	border-radius: 50%;
+	line-height: 4.4rem;
+	text-align: center;
+	display: block;
+	background: #fff;
+	color:#67ba2f;
+	border:0.3rem solid #38b1eb;
+}
+.xf_denglu:active{
+	background: #eee;
+}
+.xf_dlyz p.xf_teshup{
+	font-size: 0.8rem;
+	color:#1769b0;
+	-webkit-transform:scale(0.9);
+}
+.xf_dlyz p.xf_teshup a{
+	float: right;
+	color:#f2f6fa;
+}
+.xf_teshup input{ 
+	vertical-align: middle; 
+	padding: 2px; 
+} 
+.xf_teshup label{ 
+	vertical-align: middle; 
+} 
+.wrap_top{
+	display:none;
+}
+.xf_bg{
+	display:none;
+}

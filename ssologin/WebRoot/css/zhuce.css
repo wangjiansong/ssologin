@@ -1,0 +1,225 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	font-size: 12px;
+	font-weight: normal;
+	font-family: "SimSun";
+	line-height: 1.2;
+	overflow: hidden;
+	zoom:1;
+}
+a{
+	text-decoration: none;
+}
+ul,li {
+	float: left;
+	list-style: none;
+}
+img{
+	border:0;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float: right;
+}
+/*登陆页面*/
+.xf_bg{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width:100%;
+	height:100%;
+	background:url(../images/xf_dlbg.jpg) no-repeat;
+	background-size:100% 100%;
+}
+.xf_bg img{
+	width: 100%;
+}
+.wrap_top{
+	position: absolute;
+	z-index: 2;
+	width: 515px;
+	left: 50%;
+	margin-left: -260px;
+}
+.wrap_top .xf_logo{
+	width: 515px;
+    height: 102px;
+    background: url(../images/xf_logo.png) no-repeat;
+}
+.wrap_top .dlyanz{
+	position: relative;
+	_display: inline;
+	padding-left: 45px;
+	width: 352px;
+	height: 114px;
+	background: url(../images/xf_yzbg.png) no-repeat;
+}
+.wrap_top .dlyanz input{
+	border:0;
+	width: 275px;
+	height: 48px;
+	_height: 46px;
+	*height: 46px;
+	background: #f2f6fa;
+	outline:none;
+	font-size: 14px;
+	line-height: 1.6;
+	_line-height: 46px;
+	*line-height: 46px;
+}
+.wrap_top .dlyanz .mimak{
+	margin-top:18px;
+}
+
+.wrap_top .dlyanz #accountLoginBt{
+	position: absolute;
+	right: -16px;
+	top: 14px;
+	display: block;
+	width: 86px;
+	height: 86px;
+	background: url(../images/xf_dlan.png) no-repeat;
+}
+.wrap_top .xf_teshup{
+	padding-left: 63px;
+	padding-top: 15px;
+}
+.wrap_top .xf_teshup input{
+	position: relative;
+	top: 2px;
+}
+.wrap_top .xf_teshup label{
+	font-size: 14px;
+	color:#1769b0;
+	margin-right: 195px;
+}
+.wrap_top .xf_teshup a{
+	color:#cfefff;
+	font-size: 14px;
+}
+.wrap_top .xf_teshup a:hover{
+	text-decoration: underline;
+}
+/*注册*/
+.wrap_zc{
+	position: absolute;
+	z-index: 2;
+	width: 515px;
+	left: 50%;
+	margin-left: -260px;
+}
+.wrap_zc .xf_logo{
+	width: 515px;
+	height: 102px;
+	background: url(../images/xf_logo.png) no-repeat;
+}
+.wrap_zc .dlyanz{
+	position: relative;
+	_display: inline;
+	padding-left: 45px;
+	width: 352px;
+	height: 114px;
+	background: url(../images/xf_yzbg2.png) no-repeat;
+}
+.wrap_zc .dlyanz input{
+	border:0;
+	width: 243px;
+	height: 48px;
+	_height: 46px;
+	*height: 46px;
+	background: #f2f6fa;
+	outline:none;
+	font-size: 14px;
+	line-height: 1.6;
+	_line-height: 46px;
+	*line-height: 46px;
+	*margin-left: -45px;
+}
+.wrap_zc .dlyanz .mimak{
+	margin-top:18px;
+}
+.wrap_zc .dlyanz a{
+	font-size: 24px;
+	color:#fff;
+	line-height: 114px;
+	text-align: center;
+	position: absolute;
+	right: -14px;
+	top: 0;
+	display: block;
+	width: 114px;
+	height: 114px;
+	background: url(../images/xf_zc.png) no-repeat;
+}
+.wrap_zc .dlyanz a:hover{
+	background-position: 0 -117px;
+}
+.wrap_zc .xf_teshup{
+	padding-left: 50px;
+	padding-top: 18px;
+}
+.wrap_zc .xf_teshup2{
+	font-size: 14px;
+	padding-left: 60px;
+	color:#bbe7fc;
+}
+.wrap_zc .xf_teshup2 a{
+	text-decoration: none !important;
+}
+.wrap_zc .xf_teshup2 a:hover{
+	text-decoration: underline !important;
+}
+.wrap_zc .xf_teshup input{
+	padding-top: 5px;
+}
+.wrap_zc .xf_teshup label{
+	font-size: 14px;
+	color:#0c5594;
+}
+.wrap_zc .xf_teshup label a{
+	color:#0c5594;
+	margin-right: 55px;
+	text-decoration: none;
+}
+.wrap_zc .xf_teshup label a:hover{
+	text-decoration: underline;
+}
+.wrap_zc .xf_teshup a{
+	color:#fff;
+	font-size: 14px;
+	text-decoration: underline;
+}
+.wrap_zc .xf_teshup a:hover{
+	text-decoration: underline;
+}
+.xf_tishisp{
+	text-align: center;
+	position: absolute;
+	left: 0;
+	z-index: 22;
+	width: 100%;
+	color:#fff;
+	font-size: 18px;
+}
+.xf_jiaodianp{
+	display: none;
+	color:#ff9d9d;
+	top: -25px;
+	line-height: 1.4;
+	padding-left: 20px;
+	left: 0;
+	position: absolute;
+	background: url(../images/xf_icon.png) -41px -1px  no-repeat;
+}
+.xf_bangding{
+	display: none;
+}
+.xf_warpbg{
+	display:none;
+}

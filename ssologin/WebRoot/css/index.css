@@ -1,0 +1,345 @@
+body {
+	overflow: hidden;
+}
+
+
+/*首页中间文字介绍*/
+
+.activity-content {
+	position: relative;
+	z-index: 4;
+}
+
+.activity-content .content-info {
+	position: fixed;
+	left: 0;
+	top: 25%;
+	height: 300px;
+	margin-left: 180px;
+}
+
+.content-info .theme {
+	font-size: 24px;
+	color: #fac410;
+	margin-bottom: 32px;
+}
+
+.content-info .title {
+	font-size: 54px;
+	color: #fff;
+}
+
+.content-info .address {
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 30px 0;
+}
+
+.detail-btn {
+	display: inline-block;
+	padding: 16px 26px;
+	border: 1px solid #fac410;
+	color: #fff;
+	font-size: 18px;
+	position: relative;
+	transition: all .2s linear;
+	text-align: center;
+}
+
+.detail-btn:hover {
+	background-color: #fac410;
+	padding-left: 32px;
+}
+
+.detail-btn:hover:after {}
+
+.detail-btn:after {
+	content: "";
+	margin-top: 3px;
+	display: inline-block;
+	margin-left: 10px;
+	width: 10px;
+	height: 18px;
+	background: url(../images/go.png) no-repeat center center;
+	vertical-align: top;
+}
+
+
+/*切换图片*/
+
+.main {
+	width: 100%;
+	min-width: 1280px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 94px;
+	overflow: hidden;
+}
+
+.mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: #000;
+	opacity: .2;
+	filter: alpha(opacity=20);
+}
+
+.inside {
+	height: 100%;
+}
+
+
+/*--------- slider ---------*/
+
+#slide {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	overflow: hidden;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, .1);
+	z-index: 1;
+	margin: 0 auto;
+}
+
+.gallery {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.items {
+	display: none;
+}
+
+.items img {
+	width: 100%;
+	height: auto;
+}
+
+.pag {
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 70px;
+	z-index: 6;
+	text-align: center;
+	vertical-align: top;
+}
+
+.pag-contaner {
+	display: inline-block;
+	position: relative;
+	width: 500px;
+	height: 100px;
+}
+
+.img-pags {
+	position: static;
+	z-index: 1;
+	display: inline-block;
+	margin: 0 auto;
+	width: 500px;
+	height: 106px!important;
+}
+
+.img-pags ul {
+	margin: 0;
+	overflow: hidden;
+	width: 500px;
+	height:106px!important;
+}
+
+.img-pags li {
+	margin-right: 5px;
+	height: 100px;
+	width: 160px;
+	box-sizing: border-box;
+}
+
+.img-pags li:last-child {
+	margin-right: 0;
+}
+
+.img-pags li a {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transition: all .3s ease;
+	border: 3px solid transparent;
+}
+
+.img-pags li a img {
+	width: 100%;
+	opacity: .8;
+	transition: all .3s ease;
+}
+
+.img-pags li a span {
+	display: block;
+	background: #000;
+}
+
+.img-pags li.active a,
+.img-pags li a:hover {
+	border: 3px solid #f2ce38;
+}
+
+.img-pags li.active a img,
+.img-pags li a:hover img {
+	opacity: 1;
+}
+
+.prev,
+.next {
+	position: absolute;
+	top: 37px;
+	display: inline-block;
+	padding: 5px;
+	white-space: nowrap
+}
+
+.prev {
+	left: -30px;
+}
+
+.next {
+	right: -30px;
+}
+
+.play {
+	display: block;
+	position: absolute;
+	z-index: 15;
+	text-decoration: none;
+	position: absolute !important;
+	bottom: 36px;
+	right: 20px;
+	z-index: 99;
+	width: 23px;
+	height: 15px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #DDD;
+	padding: 6px 10px 5px;
+	text-shadow: 0 1px 1px white;
+	box-shadow: 0 1px 1px #fff;
+	font: bold 11px Sans-Serif;
+	white-space: nowrap;
+	vertical-align: middle;
+	color: #666;
+	background: transparent;
+	cursor: pointer;
+	border-color: #ddd;
+	border-radius: 3px;
+	background: linear-gradient(top, white, #E0E0E0);
+	-pie-background: linear-gradient(top, white, #E0E0E0);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), inset 0 0 3px #fff;
+}
+
+.play span {
+	display: none;
+}
+
+.play em {
+	font-style: normal;
+	display: block;
+}
+
+.paused span {
+	display: block;
+}
+
+.paused em {
+	display: none;
+}
+
+.banner {
+	width: 260px;
+	overflow: hidden;
+	position: absolute;
+	top: 200px;
+	color: #fff;
+	right: 0px;
+	z-index: 15;
+	padding: 0px;
+	border-radius: 10px 0 0 10px;
+	-moz-border-radius: 10px 0 0 10px;
+	-webkit-border-radius: 10px 0 0 10px;
+}
+
+.banner span {
+	display: block;
+	padding: 20px;
+}
+
+.progbar {
+	background: #000;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 999;
+}
+
+.numStatus {
+	display: block;
+	padding: 6px 10px 6px;
+	position: absolute;
+	z-index: 15;
+	bottom: 30px;
+	right: 75px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #DDD;
+	text-shadow: 0 1px 1px white;
+	box-shadow: 0 1px 1px #fff;
+	font: bold 11px Sans-Serif;
+	white-space: nowrap;
+	vertical-align: middle;
+	color: #666;
+	background: transparent;
+	cursor: pointer;
+	border-color: #ddd;
+	border-radius: 3px;
+	background: linear-gradient(top, white, #E0E0E0);
+	-pie-background: linear-gradient(top, white, #E0E0E0);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), inset 0 0 3px #fff;
+}
+
+
+/*-------- end slider -----------*/
+
+
+/*页脚*/
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 94px;
+	background-color: #ededed;
+	font-size: 12px;
+	line-height: 20px;
+	color: #888888;
+	text-align: center;
+}
+
+.footer p span {
+	margin-right: 10px;
+}
+
+.footer p:first-child {
+	margin-top: 30px;
+}

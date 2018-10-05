@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ssologin"
+  id="myeclipse.1534316692511"
+  context-root="/ssologin"
+  j2ee-spec="6.0"
+  archive="ssologin.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

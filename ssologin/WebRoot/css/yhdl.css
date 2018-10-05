@@ -1,0 +1,404 @@
+*{
+	padding:0;
+	margin:0;
+	font-weight: normal;
+}
+img{
+	border:0;
+}
+a{
+	text-decoration: none; 
+}
+input{
+	outline:none;
+}
+ul,li{
+	list-style:none;
+}
+body{
+	font-family: 'Microsoft YaHei';
+	background: url(../images/xf_dlbg.jpg) #38b1eb no-repeat;
+	background-size: 100%;
+}
+.xf_yhdl{
+	padding-top: 30px;
+	width: 836px;
+	margin: 0 auto;
+}
+.yh_logo{
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.yh_logo img{
+	height: 57px;
+	float: left;
+}
+.yh_logo h3{
+	color:#fff;
+	margin-top: 15px;
+	padding-left:10px;
+	float: left;
+	font-size: 18px;
+	padding-top: 8px;
+	line-height: 24px;
+	border-left: 1px solid #fff;
+}
+.yhdl_inner{
+	overflow: hidden;
+	_zoom:1;
+	position: relative;
+	width: 836px;
+	height: 458px;
+	padding-top: 35px;
+	background: url(../images/yhdl_bg.png) no-repeat;
+}
+.yhdl_inner .zctab{
+	overflow: hidden;
+	border-radius: 3px;
+	width: 436px;
+	height: 42px;
+	margin: 0 auto 35px;
+	border:1px solid #7ad4ff;
+}
+.yhdl_inner .zctab a{
+	display: block;
+	width: 50%;
+	font-size: 18px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	float: left;
+	color:#fff;
+}
+.yhdl_inner .zctab a:hover{
+	background: #38ade5;
+}
+.yhdl_inner .zctab .cur{
+	background: #50c2f7;
+}
+.yzfs_box{
+	position: relative;
+	left: 0;
+}
+.yhdl_inner form{
+	width: 720px;
+	left: 0;
+	position: absolute;
+}
+.yhdl_inner .sjyz_form{
+	left: 836px;
+}
+.yhdl_inner form p{
+	width: 100%;
+	padding-left:75px;
+	height:44px;
+	margin-bottom: 18px;
+	background: url(../images/yh_icon.png) 110px 0 no-repeat;
+}
+.yhdl_inner form .yz_bg{
+	background: url(../images/yh_icon.png) 110px -60px no-repeat;
+}
+.yhdl_inner form .yz_bg input{
+	width: 110px;
+}
+.yhdl_inner form .yz_bg img{
+	cursor: pointer;
+	margin-top: 5px;
+	margin-left: 30px;
+}
+form .yz_bg .fsyzm{
+	cursor:pointer;
+	margin-left: 30px;
+	margin-top: 5px;
+	color:#31a1de;
+	float: left;
+	display: block;
+	width: 107px;
+	height: 34px;
+	line-height: 34px;
+	background: #ece8da;
+	border-radius: 3px;
+	font-size: 12px;
+	text-align: center;
+	font-family: 'SimSun';
+}
+.yhdl_inner form p i{
+	font-size: 20px;
+	font-style: normal;
+	text-align: center;
+	display: block;
+	float: left;
+	width: 36px;
+	line-height: 44px;
+	color:#ffabab;
+}
+.yhdl_inner form p b{
+	margin: 15px 0 0 10px;
+}
+.xf_yhdl form p b{
+	margin-top: 5px;
+	float: left;
+	overflow: hidden;
+	display: block;
+	width: 12px;
+	height: 12px;
+}
+.yhdl_inner form p b{
+	margin-top: 15px;
+}
+form p .yes{
+	background: url(../images/icon_zq.png) no-repeat;
+}
+form p .no{
+	background: url(../images/tishi_p.png) no-repeat;
+}
+.yhdl_inner form p input{
+	color:#333;
+	width: 335px;
+	height: 32px;
+	font-size: 14px;
+	margin: 6px 8px 0;
+	*line-height:32px;
+	float: left;
+	background: #f2f6fa;
+	border:0;
+}
+.yhdl_inner form p span{
+	color:#fff;
+	margin-left: 10px;
+	font-size:12px;
+	line-height: 38px;
+}
+.yhdl_inner form p .none{
+	margin-left: 5px;
+	color:#ffabab;
+}
+.yhdl_inner form .bgnone_p{
+	color:#fff;
+	font-size: 12px;
+	font-family: 'SimSun';
+	padding-left: 115px;
+	background: none;
+}
+.yhdl_inner form .bgnone_p a{
+	color:#6fd52b;
+	border-bottom: 1px solid #6fd52b;
+}
+.yhdl_inner form .bgnone_p input{
+	cursor: pointer;
+	width: 131px;
+	height: 48px;
+	float: right;
+	line-height: 48px;
+	font-size: 14px;
+	text-align: center;
+	margin-right: 80px;
+	color:#fff;
+	background: #6fd52b;
+	border-radius: 3px;
+}
+/*验证成功*/
+.yxyzcg p{
+	margin-top: 160px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 20px;
+	color:#fff;
+}
+.yxyzcg a{
+	margin-left: 315px;
+	margin-bottom: 22px;
+	display: block;
+	width: 206px;
+	height: 40px;
+	background: #6fd52b;
+	line-height: 40px;
+	text-align: center;
+	color:#fff;
+	border-radius: 3px;
+	font-size: 14px;
+	font-family: 'SimSun';
+	font-weight: bold;
+}
+.yxyzcg a:hover{
+	background: #6CC92D;
+}
+/*手机验证成功*/
+.sjyzcg {
+	margin-top: 200px;
+}
+.sjyzcg p{
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 20px;
+	color:#fff;
+}
+.sjyzcg p span{
+	color:#85d2f7;
+	font-size: 14px;
+}
+/*找回密码*/
+.zhmm_inner{
+	position: relative;
+	width: 500px;
+	margin: 0 auto;
+}
+.zhbz_tab{
+	margin-bottom: 45px;
+	overflow: hidden;
+}
+.zhbz_tab p{
+	position: relative;
+	z-index: 2;
+	float: left;
+	color:#fff;
+	margin-right: 160px;
+	font-size: 14px;
+	width: 56px;
+	font-family: 'SimSun';
+}
+.zhbz_tab .marnone{
+	margin:0;
+}
+.zhbz_tab p span{
+	text-align: center;
+	font-size: 26px;
+	line-height: 54px;
+	color:#31a1de;
+	display: block;
+	width: 100%;
+	height: 56px;
+	background: url(../images/yh_icon.png) 6px -115px no-repeat;
+}
+.zhbz_tab .cur span{
+	color:#fff;
+	text-shadow: 2px 1px 1px #000;
+	background: url(../images/yh_icon.png) -109px -115px no-repeat;
+}
+.zhbz_tab i{
+	position: absolute;
+	z-index: 1;
+	top: 25px;
+	left: 50px;
+	display: block;
+	height: 4px;
+	width: 390px;
+	background: #c1ebff;
+}
+.mmzltx{
+	padding-left: 40px;
+}
+.mmzltx form p{
+	margin-bottom: 5px;
+	height:44px;
+	background: url(../images/yh_icon.png) 0 0 no-repeat;
+}
+.mmzltx form p input{
+	color:#333;
+	width: 335px;
+	height: 32px;
+	font-size: 14px;
+	margin: 6px 8px 0 8px;
+	*line-height:32px;
+	float: left;
+	background: #f2f6fa;
+	border:0;
+}
+.mmzltx form p b{
+	float: left;
+	margin-top: 3px;
+	margin-right: 5px;
+	display: block;
+	width: 12px;
+	height: 12px;
+}
+ .xf_yhdl form .bg_none{
+	color: #ffabab;
+	font-size: 14px;
+	height:20px;
+	background: none;
+}
+.mmzltx form .yz_bg{
+	margin-top: 15px;
+	background: url(../images/yh_icon.png) 0 -60px no-repeat;
+}
+.mmzltx form .yz_bg input{
+	float: left;
+	width: 110px;
+}
+.mmzltx form img{
+	cursor: pointer;
+	float: left;
+	margin-left: 15px;
+	margin-top: 5px;
+	width: 101px;
+	height: 33px;
+}
+.tongyiann{
+	border-radius: 3px;
+	border:0;
+	cursor: pointer;
+	width: 131px;
+	height: 48px;
+	float: left;
+	line-height: 48px;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 20px;
+	color: #fff;
+	background: #6fd52b;
+	border-radius: 3px;
+}
+.zh_xyibu{
+	margin-left: 220px;
+}
+/*找回密码步骤2*/
+.zhmm_bz2{
+	padding-left: 40px;
+}
+.zhmm_bz2 p{
+	color:#fff;
+	font-size: 14px;
+}
+ 
+.zhmm_bz2 form .yz_bg{
+	height: 44px;
+	margin-top: 15px;
+	background: url(../images/yh_icon.png) 0 -60px no-repeat;
+}
+.zhmm_bz2 form .yz_bg input{
+	float: left;
+	width: 110px;
+}
+.zhmm_bz2 form p input{
+	color:#333;
+	width: 335px;
+	height: 32px;
+	font-size: 14px;
+	margin: 6px 8px 0;
+	*line-height:32px;
+	float: left;
+	background: #f2f6fa;
+	border:0;
+}
+.ghyzfs{
+	display: block;
+	float: left;
+	margin-top: 30px;
+	margin-left: 25px;
+	font-size: 12px;
+	color:#fff;
+	border-bottom: 1px solid #fff;
+}
+.xgwc_box{
+	padding-top: 150px;
+	color:#fff;
+	text-align: center;
+}
+.xgwc_box p{
+	margin-bottom: 10px;
+}
+.xgwc_box a{
+	color:#6fd52b;
+	text-decoration: underline;
+}

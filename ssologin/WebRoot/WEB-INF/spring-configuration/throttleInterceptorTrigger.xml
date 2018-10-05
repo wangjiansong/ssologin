@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed to Jasig under one or more contributor license
+    agreements. See the NOTICE file distributed with this work
+    for additional information regarding copyright ownership.
+    Jasig licenses this file to you under the Apache License,
+    Version 2.0 (the "License"); you may not use this file
+    except in compliance with the License.  You may obtain a
+    copy of the License at the following location:
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+	  <!--  这个类的工作原理 
+	即在一秒内用户错误登录的频率大于failureThreshold/failureRangeInSeconds时候，就会被阻止
+	60秒内输错5次
+	-->
+	<bean id="throttleInterceptor"
+		class="org.jasig.cas.web.support.InMemoryThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter"
+		p:failureRangeInSeconds="3600"
+		p:failureThreshold="10"/> 
+	
+	<!-- 工作原理同上，根据ip限制
+	<bean id="throttleInterceptor"
+		class="org.jasig.cas.web.support.InMemoryThrottledSubmissionByIpAddressHandlerInterceptorAdapter"
+		p:failureRangeInSeconds="100"
+		p:failureThreshold="120"/>
+	-->
+	
+	<bean id="throttleInterceptorJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean"
+		p:targetObject-ref="throttleInterceptor"
+		p:targetMethod="decrementCounts" />
+		
+	<bean id="periodicThrottleCleanerTrigger"
+		class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean"
+		p:jobDetail-ref="throttleInterceptorJobDetail"
+		p:startDelay="0"
+		p:repeatInterval="1000" />
+</beans>
